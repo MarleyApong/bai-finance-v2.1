@@ -1,0 +1,157 @@
+/* ============================Lien active==================== */
+li:nth-child(3) .Items {
+    background: var(--color-1) !important;
+    color: var(--color-5);
+    border: 1px solid var(--color-4);
+}
+
+/* ============================Lien active==================== */
+li:not(:nth-child(3)) .Items:hover {
+    background: rgba(67, 56, 128, 0.13);
+}
+
+::placeholder {
+    color: var(--color-4) !important;
+    font-weight: 600;
+}
+
+.Form {
+    padding: 20px;
+}
+
+.Contact__control {
+    display: flex !important;
+}
+
+.Contact__control label {
+    font-size: 15px !important;
+    color: var(--color-4);
+}
+
+.Contact__control input {
+    background: none !important;
+    color: var(--color-4) !important;
+    border: 1px solid var(--color-input) !important;
+}
+
+.cpte {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+    width: 40%;
+    border-right: 2px solid var(--color-4);
+}
+
+.cpte_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    background: var(--color-4);
+    color: var(--bg-primary);
+    border-radius: 10px;
+}
+
+.cpte_img i {
+    font-size: 60px;
+}
+
+.cpte_infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--color-4);
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.cpte_activity {
+    width: 70%;
+    /* display: none; */
+}
+
+.Contact {
+    height: 50vh !important;
+}
+
+.RecentOrders table {
+    border-collapse: separate;
+    border: 1px solid var(--bg-primary);
+}
+
+table thead tr {
+    background: var(--color-4) !important;
+}
+
+table thead tr td {
+    color: var(--bg-primary);
+}
+
+table tbody tr td {
+    color: var(--color-5);
+    background: var(--color-hover);
+}
+
+table tbody tr:hover {
+    background: var(--color-input) !important;
+}
+
+@media screen and (max-width: 660px) {
+    .Form__container {
+        height: 100%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .cpte_img {
+        width: 100%;
+        height: 90px;
+    }
+
+    .cpte_img i {
+        font-size: 30px;
+    }
+
+    span {
+        font-size: 13px !important;
+    }
+
+    .cpte_infos {
+        display: flex;
+        padding: 20px;
+        gap: 10px;
+        border: 1px solid #fff;
+    }
+
+    .cpte {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 30px;
+        width: 100%;
+        border-right: none;
+    }
+
+    .cpte_activity {
+        width: 100%;
+    }
+
+    .Contact {
+        display: block;
+    }
+
+    .Control__display input {
+        width: auto !important;
+
+    }
+}

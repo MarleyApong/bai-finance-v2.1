@@ -1,0 +1,213 @@
+/* ===============PARTIE PRINCIPALE============= */
+
+/* body {
+    overflow: hidden;
+} */
+
+.Main {
+    position: relative;
+    left: 230px;
+    background: var(--bg-50);
+    width: calc(100% - 230px);
+    min-height: 100vh !important;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.Main.show {
+    width: calc(100% - 0px) !important;
+    left: 0px !important;
+}
+
+
+/* ================TOPBAR================ */
+.Topbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-bottom: 1rem;
+    place-items: center;
+    width: 100%;
+    height: 3rem;
+    background: var(--bg-primary);
+    color: var(--color-4);
+    border-radius: 2px;
+    box-shadow: 3px 3px 10px var(--bg-primary);
+    transition: .5s ease-in-out;
+}
+
+.Taskbar__icon a {
+    margin-left: 20px;
+}
+
+.Topbar__right {
+    position: relative;
+    display: flex;
+    place-items: center;
+}
+
+.Taskbar__user {
+    margin: 0 5px;
+    display: flex;
+    place-content: center;
+}
+
+.Taskbar__user .Username {
+    margin: auto 10px;
+}
+
+.Taskbar__user .Profil {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    place-items: center;
+    overflow: hidden;
+}
+
+.Taskbar__user .Profil img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Taskbar__icon .Menu {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Taskbar__icon i{
+    margin-left: 10px;
+    color: var(--color-4);
+    transition: .5s ease;
+}
+
+.Taskbar__icon i:hover {
+    cursor: pointer;
+    color: var(--color-3);
+    transition: .5s ease-in-out;
+}
+
+
+
+/* ==================Prise en Main================== */
+.Middle__help {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    place-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 3rem;
+    background: var(--bg-primary);
+    border-radius: 3px;
+}
+
+.Middle__help a {
+    position: relative;
+    color: var(--color-4);
+}
+
+.Middle__help a:hover small::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 40px;
+    background: var(--color-4);
+}
+
+.Help__img,
+.Help__content {
+    color: var(--color-4);
+}
+
+.Close {
+    display: none !important;
+}
+
+.Bar__color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+    height: 40px;
+    background: var(--bg-50);
+    border-radius: 5px;
+    padding: 10px;
+    visibility: hidden;
+    transform: translateX(1px);
+    transition: .5s;
+}
+
+.Bar__color.show_color {
+    visibility: visible;
+    transform: translateX(-20px);
+    transition: 1s;
+}
+
+.color {
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.color:hover {
+    cursor: pointer;
+}
+
+.color1 {
+    background: #687b96;
+}
+.color2 {
+    background: #333;
+}
+.color3 {
+    background: #3b5246;
+}
+
+@media screen and (max-width: 625px) {
+    .Middle__help {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+        background:none;
+        border-radius: 3px;
+    }
+
+    .Help__img {
+        display: none;
+    }
+
+    .Help__link a {
+        display: block;
+        margin: auto 5px;
+        padding: 5px 15px;
+        font-size: 13px;
+    }
+
+    .Help__content {
+        display: block;
+        padding: 5px 5px;
+        font-size: 13px;
+        color: var(--bg-primary);
+        font-weight: var(--f-weight-sm);
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .Help__content {
+        font-size: 10px;
+        
+    }
+}

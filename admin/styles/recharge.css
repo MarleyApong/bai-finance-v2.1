@@ -1,0 +1,245 @@
+/* ============================Lien active==================== */
+li:nth-child(4) .Items {
+    background: var(--color-1) !important;
+    color: var(--color-5);
+    border: 1px solid var(--color-4);
+}
+
+/* ============================Lien active==================== */
+li:not(:nth-child(4)) .Items:hover {
+    background: rgba(67, 56, 128, 0.13);
+}
+
+/* ==============================Partie Principale===================== */
+
+form {
+    width: 100%;
+    padding: 10px;
+}
+
+.Add__scrollY {
+    overflow-y: scroll;
+}
+
+.Info_Even {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Info_Even__header {
+    display: block;
+    text-align: center;
+}
+
+.Info_Even__header .Important {
+    position: relative;
+}
+
+.Info_Even__family span,
+.Info_Even__family i,
+.Info_Even__header .Important h4 {
+    color: var(--color-4);
+    font-weight: var(--f-weight-sm);
+}
+
+.Important .Red {
+    color: red;
+}
+
+.Info_Even__content {
+    position: relative;
+    justify-content: center;
+    /* margin-bottom: 3rem; */
+}
+
+.Name__group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.Name__group h3 {
+    font-size: var(--size-md);
+    color: var(--color-4);
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+.All_info_Even {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 15px;
+    border: 1px solid var(--color-4);
+    margin-bottom: 2rem;
+}
+
+.Input__box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: var(--size-md-2);
+    font-weight: var(--f-weight-sm);
+    color: var(--color-4);
+}
+
+.All_info_Even input,
+select {
+    background: var(--color-input);
+    color: var(--color-5);
+    font-weight: var(--f-weight-sm);
+    font-size: var(--size-md-2);
+    border: none;
+    outline: none;
+    width: auto !important;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+::placeholder {
+    font-weight: var(--f-weight-sm);
+}
+
+option {
+    font-size: var(--size-md-2);
+    color: var(--color-5);
+    font-weight: var(--f-weight-sm);
+}
+
+.Before__Save {
+    margin: 30px 0;
+}
+
+.Error,
+.Error2 {
+    display: none;
+    color: red;
+}
+.Error.error,
+.Error2.error {
+    display: block;
+}
+
+.en.none {
+    display: none;
+}
+
+/* ====================Fin du Formulaire==================== */
+
+/* ==========================Responsive====================== */
+@media screen and (max-width: 1462px) {
+    .Info_Even__header .Important span::before {
+        display: none;
+    }
+
+    .Info_Even__header .Important span::after {
+        display: none;
+    }
+
+    .All_info_Even input {
+        width: 135px;
+    }
+}
+
+@media screen and (max-width: 1322px) {
+
+    label,
+    h3,
+    h4,
+    span,
+    p {
+        font-size: var(--size-md-2);
+    }
+
+    .All_info_Even {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5px;
+        border: none;
+    }
+
+    .Form__container {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .All_info_Even {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Login__button a {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Before__Action {
+        display: none !important;
+    }
+
+    .Before__Save {
+        width: 330px !important;
+    }
+}
+
+@media screen and (max-width: 471px) {
+    .Info_Even__header {
+        margin-bottom: 40px;
+    }
+
+    .Name__group h3 {
+        text-align: center;
+        text-decoration: overline;
+    }
+
+    .Login__button {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* ======================Responsive Accueil======================== */
+
+@media screen and (max-width: 1019px) {
+    .Content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .Navigation.active {
+        width: 230px;
+        z-index: 200;
+    }
+
+    .Main {
+        width: calc(100% - 80px);
+        left: 80px;
+        z-index: 100;
+    }
+
+    .Content .Box {
+        grid-column: span 1 !important;
+        grid-row: span 2 !important;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .Content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .Content .Box {
+        flex-direction: column;
+    }
+}

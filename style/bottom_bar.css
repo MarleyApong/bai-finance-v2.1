@@ -1,0 +1,95 @@
+.Bottom_bar {
+    position: fixed;
+    display: none;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: var(--bg-primary);
+    color: var(--color-4);
+    bottom: 0;
+    z-index: 3000000;
+}
+
+.Onglet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: var(--color-4);
+    padding: 4px;
+    cursor: pointer;
+}
+
+.Menu {
+    display: contents;
+}
+
+.Info_Even__header {
+    margin-bottom: 40px !important;
+}
+
+@media screen and (max-width: 1462px) {
+    .Login__button {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .Login__button {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+/* ============================Responsive======================= */
+@media screen and (max-width: 564px) {
+    .Navigation.show {
+        width: 230px;
+    }
+
+    .Content {
+        margin-bottom: 90px;
+    }
+
+    .Menu {
+        display: none;
+    }
+
+    .Bottom_bar {
+        display: grid;
+    }
+
+    .Login__button {
+        margin-bottom: 50px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 30px !important;
+    }
+
+    /* ul li:nth-child(7) {
+        display: none !important;
+    } */
+}
+
+/* ================Lien ================ */
+.Items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 13px 0px;
+    font-size: var(--size-md);
+    color: var(--color-4);
+    font-weight: var(--f-weight-sm);
+    transition: top all .5s;
+    padding-left: 20px;
+    border-radius: 5px;
+    width: 230px;
+}

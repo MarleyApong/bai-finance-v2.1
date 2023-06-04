@@ -1,0 +1,254 @@
+/* ============================Lien active==================== */
+li:nth-child(5) .Items {
+    background: var(--color-1) !important;
+    color: var(--color-5);
+    border: 1px solid var(--color-4);
+}
+
+/* ============================Lien active==================== */
+li:not(:nth-child(5)) .Items:hover {
+    background: rgba(67, 56, 128, 0.13);
+}
+
+td,
+label {
+    font-size: var(--size-md-2);
+}
+
+.Contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    border-radius: 3px;
+    /* background: var(--bg-primary); */
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.Contact__control {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: var(--color-4);
+    font-size: var(--size-md-2);
+}
+
+.Control__display label {
+    font-size: 12px;
+}
+
+.Control__display input,
+select,
+option {
+    outline: none;
+    border: none;
+    background: var(--bg-primary);
+    color: var(--color-4);
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.Contact__control button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.Contact__control button i {
+    color: var(--color-4);
+}
+
+.Control__display span {
+    /* color: blue ; */
+    font-weight: 600;
+}
+
+::placeholder {
+    color: var(--color-4);
+    font-weight: var(--f-weight-sm);
+}
+
+.RecentOrders {
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 1px;
+    border-radius: 3px;
+}
+
+
+.RecentOrders table tr {
+    border-bottom: 1px solid rgba(27, 27, 27, 0.1);
+    /* color: var(--color-4) !important; */
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    font-size: var(--size-md-2);
+}
+
+table thead tr {
+    color: var(--color-5);
+    background: var(--color-1);
+}
+
+table tbody tr {
+    color: var(--color-4);
+    background: var(--bg-primary);
+}
+
+table thead td {
+    font-size: var(--size-md-2);
+    text-align: center;
+}
+
+.RecentOrders table tbody tr td {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.RecentOrders table tbody tr:hover {
+    background-color: var(--color-hover) !important;
+    text-align: center;
+    align-items: center;
+    color: var(--color-5);
+}
+
+.RecentOrders table tr td {
+    padding: 8px;
+    font-size: var(--size-md-2);
+    font-weight: var(--f-weight-sm);
+}
+
+.RecentOrders table tr td:last-child {
+    text-align: center;
+}
+
+.RecentOrders table tr td:nth-child(2) {
+    text-align: center;
+}
+
+.RecentOrders table tr td:nth-child(3) {
+    text-align: center;
+}
+
+td .Btn_show i {
+    color: rgb(55, 243, 18);
+}
+
+td .Btn_delete i {
+    color: red;
+}
+
+.Set_profil {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    padding: 0px !important;
+}
+
+.Set_profil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ========================Responsive======================== */
+@media screen and (max-width: 1400px) {
+    .Contact {
+        margin: 1rem 0 !important;
+    }
+
+    .Details table thead td {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 1177px) {
+
+
+    .Details .RecentCustomers {
+        position: relative;
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    table thead td {
+        font-size: 16px !important;
+    }
+
+    table tr td,
+    table tbody tr td {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .Contact__control {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .Control__display input {
+        width: 210px;
+    }
+
+    .RecentOrders {
+        overflow-x: scroll;
+        overflow-y: scroll;
+      }
+}
+
+@media screen and (max-width: 885px) {
+    .Contact {
+        margin: 1rem 0 !important;
+    }
+
+    .Details table {
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+
+    .Details .RecentOrders {
+        display: block;
+        max-height: 430px;
+        width: 100%;
+        padding: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Contact__control {
+        grid-template-columns: repeat(1, 1fr);
+        /* padding-right: 80px; */
+    }
+
+    .Control__display label {
+        display: none;
+    }
+
+    .Control__display input,
+    select,
+    option {
+        width: 100%;
+    }
+
+    .Control__display {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    table {
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.Contact::-webkit-scrollbar,
+.RecentOrders::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 7px;
+    /* width of the entire scrollbar */
+}
+
+.Contact::-webkit-scrollbar-track,
+.RecentOrders::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: var(--color-5);
+    /* color of the tracking area */
+}
+
+.Contact::-webkit-scrollbar-thumb,
+.RecentOrders::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-1);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--color-1);
+    /* creates padding around scroll thumb */
+}
+
+
+:root {
+    --bg-primary: #dedef0;
+    --bg-50: #eefae9;
+    --color-1: #0c2c52;
+    --color-2: #f3f3f3;
+    --color-3: #100d41;
+    --color-4: #0c2c52;
+    --color-5: #ffffff;
+    --color-6: #ffffff31;
+
+    --color-switch: #fff;
+    --color-switch2: #fff;
+    --color-switch3: #fff;
+
+    --white : #0c2c52;
+
+    --bg-header: #e1e1e1;
+    --color-btn: #100d41;
+    --color-input: #0c2c52;
+    --color-hover: #0d1a247c;
+
+
+    --border-color-1: #687b96;
+    --border-color-2: #3b5246;
+    --border-color-3: #b99797;
+    --border-color-4: #606677;
+    --border-color-5: #c4b2a4;
+    --border-color-6: #c2a8c0;
+
+    --box-call-color: #3b3a3a;
+
+    --msg-succes: rgb(43, 124, 54);
+    --msg-error: rgb(223, 35, 35);
+
+    --f-weight-bd: 700;
+    --f-weight-sm: 600;
+
+    --size-icon-md: 1.5rem;
+    --size-md: 1rem;
+    --size-md-2: 14px;
+    --size-sm: .5rem;
+}
+/* 
+/* :root {
+    --bg-primary: #23343f;
+
+    --bg-50: #3b484d;
+    --color-1: #222c46;
+    --color-2: #f3f3f3;
+    --color-3: #0a0916;
+    --color-4: #d0d1d3;
+    --color-5: #dddddd;
+    --color-6: #ffffff31;
+
+
+    --border-color-1: #687b96;
+    --border-color-2: #3b5246;
+    --border-color-3: #b99797;
+    --border-color-4: #606677;
+    --border-color-5: #c4b2a4;
+    --border-color-6: #c2a8c0;
+
+    --box-call-color: #3b3a3a;
+
+    --msg-succes: rgb(43, 124, 54);
+    --msg-error: rgb(223, 35, 35);
+
+    --f-weight-bd: 700;
+    --f-weight-sm: 600;
+
+    --size-icon-md: 1.5rem;
+    --size-md: 1rem;
+    --size-md-2: 14px;
+    --size-sm: .5rem;
+} */ */
+
+.red {
+    color: red;
+}
+
+.Not__found {
+    color: var(--color-4);
+}
+
+.Count__fetch #Return {
+    display: none;
+}
+
+.Mes_err {
+    background: #d0d1d3;
+    color: #2d772a;
+    font-weight: 600;
+    padding: 8px;
+}

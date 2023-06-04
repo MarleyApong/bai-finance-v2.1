@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    --gradiant: #eefae9;
+    --gradiant-2: #eefae9;
+    --gradiant-3: #093e88;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--gradiant-2);
+    overflow: hidden !important;
+}
+
+.Content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.Content::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background: var(--gradiant-2);
+    border-radius: 50%;
+    top: -30px;
+    right: -40px;
+}
+
+.Content::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background: var(--gradiant-2);
+    border-radius: 50%;
+    bottom: -30px;
+    left: -40px;
+}
+
+.Left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 410px;
+    padding: 10px;
+}
+
+.Img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/logo/logo1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ======================Partie droite====================== */
+.Right {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+    padding: 10px;
+    border-left: 2px solid var(--gradiant);
+    overflow: hidden;
+    z-index: 100;
+}
+
+
+.NamePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NamePage h4 {
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    color: var(--gradiant-3);
+
+}
+
+.NamePage h4::after {
+    position: absolute;
+    top: 10px;
+    /* content: ''; */
+    width: 110px;
+    height: 110px;
+    background: transparent;
+    border: 5px solid var(--gradiant-3);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+/* .Right .Input_box {
+    display: flex;
+    gap: 5px;
+} */
+
+.Input_box input {
+    border: none;
+    outline: none;
+    background: var(--gradiant);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+::placeholder,input {
+    color: var(--gradiant-3);
+}
+
+.Box_sbmt button {
+    position: relative;
+    background: none;
+    border:  2px solid var(--gradiant-3);
+    color: var(--gradiant-3);
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.Box_sbmt button:hover {
+    color: var(--gradiant);
+    background: var(--gradiant-3);
+    transform: rotate(1deg);
+    transition: 1s;
+}
+
+/* .Box_sbmt button:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10%;
+    background: var(--gradiant);
+    transition: 1s;
+}
+
+.Box_sbmt button:hover::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10%;
+    background: var(--gradiant);
+    transition: 1s;
+} */
+
+.Input_box small {
+    color: rgb(141, 39, 39);
+    font-weight: 600;
+}
+
+.Input_box a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    color: var(--gradiant-3);
+}
+
+
+.Input_box a:hover {
+    text-decoration: underline;
+}
+
+.Input__box.Error .Message_err {
+    color: var(--msg-error);
+    /* display: block; */
+}
+
+.Logo_e {
+   display: none;
+}
+
+.Success i {
+    font-size: 80px;
+    color: var(--gradiant-3);
+}
+
+.ok {
+    border: 1px solid var(--gradiant-3);
+    color: var(--gradiant-3);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 3px;
+    background: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.ok:hover {
+    padding: 10px 20px;
+    transition: .5;
+}
+
+/* ====================Responsive===================== */
+@media screen and (max-width:1319px) {
+    .Img {
+        display: flex;
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width:1253px) {
+    .Left {
+        display: none;
+        width: 0%;
+    }
+
+    .Logo_e {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+    }
+    
+
+    .Right {
+        width: 100%;
+        border: none;
+        /* background-image: url("Img/Connexion/2.svg"); */
+    }
+}
+
+@media screen and (max-width:1253px) {
+    .Content {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media screen and (max-width:914px) {
+    body {
+        overflow: hidden;
+        background: var(--gradiant);
+    }
+    .Right {
+        background-image: none;
+    }
+    .NamePage h4 {
+        color: var(--gradiant-3);
+        text-decoration: overline;
+    }
+    .Content {
+        background: var(--gradiant);
+        border: 1px solid var(--gradiant-3);
+    }
+    .Content::after {
+       display: none;
+        
+    }
+    .Content::before {
+       display: none;
+    }
+    .Input_box input {
+        border: 1px solid var(--gradiant-3);
+        color: var(--gradiant-3);
+    }
+    ::placeholder {
+        color: var(--gradiant-3);
+        font-weight: 600;
+    }
+    .Box_sbmt button {
+        border:  2px solid var(--gradiant-3);
+        color: var(--gradiant-3);
+    }
+    
+    .Box_sbmt button:hover {
+        color: var(--gradiant);
+        background: var(--gradiant-3);
+    }
+    
+    .Box_sbmt button:hover::before {
+        background: var(--gradiant-3);
+    }
+    
+    .Box_sbmt button:hover::after {
+        background: var(--gradiant-3);
+    }
+}
+
+@media screen and (max-width:625px) {
+   
+    .Content {
+        width: 70% !important;
+        height: 70%;
+        overflow: hidden;
+    }
+    input {
+        border-radius: 5px !important;
+    }
+}
+@media screen and (max-width:425px) {
+    body {
+        background: var(--gradiant);
+    }
+   
+    .Content {
+        background: var(--gradiant);
+    }
+}
+@media screen and (max-width: 325px) {
+    .Content {
+        border: none;
+    }
+}
+@media screen and (max-width: 275px) {
+    .Content {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}

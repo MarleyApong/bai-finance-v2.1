@@ -1,0 +1,174 @@
+
+.Navigation {
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    padding: 20px;
+    background: var(--bg-primary);
+    font-weight: var(--fw-2);
+    transition: 1s;
+    overflow-x: hidden;
+    
+}
+
+/* ===================Icone fermente qui affiche a une certaine taille=================== */
+
+.close {
+    position: absolute;
+    display: none ;
+    top: 10px;
+    right: 30px;
+    z-index: 5000;
+}
+
+.close i {
+    font-size: var(10px);
+    color: var(--color-4);
+    cursor: pointer;
+}
+
+/* ===================Fin icone======================= */
+
+/* ================Debut Info sur le membre=============== */
+
+.Info_member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* ==================Voyant active=============== */
+
+.Connected {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background: rgb(2, 253, 2);
+}
+
+.Img_logo {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
+    background: var(--bg-50);
+    /* border: 2px solid var(--color-4) !important; */
+}
+
+.Img_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.Status_member {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Status_member span:first-child {
+    padding: 5px;
+    background: var(--color-4);
+    color: var(--bg-primary);
+    border-radius: 5px;
+}
+
+.Status_member span:last-child {
+    color: var(--color-4);
+}
+
+/* ====================Fin info sur le membre============== */
+
+/* ====================Debut des items================== */
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+/* ================Lien ================ */
+.Items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 13px 0px;
+    font-size: var(--size-md);
+    color: var(--color-5);
+    font-weight: var(--f-weight-sm);
+    transition: top all .5s;
+    padding-left: 20px;
+    border-radius: 5px;
+    width: 230px;
+}
+
+/* ===============Icone=============== */
+.Items i {
+    font-size: var(--size-icon-md);
+}
+
+/* =====================Responsive de la navigation================= */
+
+@media screen and (max-width: 890px) {
+    /* .Navigation {
+        width: 230px !important;
+    } */
+
+    .Main {
+        width: calc(100% - 0px) !important;
+        left: 0px !important;
+    }
+
+    .Navigation.show {
+        width: 230px !important;
+        z-index: 200;
+    }
+
+    .close {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .Contact {
+        height: auto;
+        overflow: hidden !important;
+    }
+
+    table td {
+        font-size: 10px !important;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .Widget1 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        margin-bottom: 300px;
+    }
+
+    .Card {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .Card i {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .Contact {
+        display: none;
+    }
+}

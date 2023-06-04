@@ -1,0 +1,242 @@
+/* ============================Lien active==================== */
+li:nth-child(6) .Items {
+    background: var(--color-1) !important;
+    color: var(--color-5);
+    border: 1px solid var(--color-4);
+}
+
+/* ============================Lien active==================== */
+li:not(:nth-child(6)) .Items:hover {
+    background: rgba(67, 56, 128, 0.13);
+}
+
+.Form {
+    padding: 10px;
+}
+
+
+form {
+    width: 100%;
+    padding: 10px;
+}
+
+.Add__scrollY {
+    overflow-y: scroll;
+}
+
+.Identity {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.Identity__header {
+    display: block;
+    text-align: center;
+}
+
+.Identity__header .Important {
+    position: relative;
+}
+
+.Identity__family span,
+.Identity__family i,
+.Identity__header .Important h4 {
+    color: var(--color-4);
+    font-weight: var(--f-weight-sm);
+}
+
+.Important .Red {
+    color: red;
+}
+
+.Identity__content {
+    position: relative;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.Name__group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.Name__group h3 {
+    font-size: var(--size-md);
+    color: var(--color-4);
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+.First__group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.First__group .Profil {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    box-shadow: 1px 1px 6px var(--color-1);
+    border-radius: 1%;
+    overflow: hidden;
+}
+
+.First__group .Profil img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1%;
+    object-fit: cover;
+    /* display: none; */
+}
+
+.Secondly__group,
+.Info__secondly,
+.Confidence__secondly {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 15px;
+    border: 1px solid var(--color-4);
+}
+
+.Confidence__secondly {
+    grid-template-columns: repeat(1,1fr);
+}
+
+.Input__box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-size: var(--size-md-2);
+    font-weight: var(--f-weight-sm);
+    color: var(--color-4);
+}
+
+.Secondly__group input,
+.Info__secondly input,
+.Confidence__secondly input,
+select {
+    background: var(--color-input);
+    color: var(--color-5);
+    font-weight: var(--f-weight-sm);
+    font-size: var(--size-md-2);
+    border: none;
+    outline: none;
+    width: auto !important;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+::placeholder {
+    font-weight: var(--f-weight-sm);
+}
+
+option {
+    font-size: var(--size-md-2);
+    color: var(--color-5);
+    font-weight: var(--f-weight-sm);
+}
+
+.Before__Save {
+    margin: 30px 0;
+}
+
+
+/* ===============Info contact=============== */
+.Contact__info {
+    margin-bottom: 3rem;
+}
+
+/* ====================Fin du Formulaire==================== */
+
+/* ==========================Responsive====================== */
+@media screen and (max-width: 1462px) {
+    .Identity__header .Important span::before {
+        display: none;
+    }
+
+    .Identity__header .Important span::after {
+        display: none;
+    }
+
+    .Secondly__group input,
+    .Info__secondly input,
+    .Confidence__secondly input {
+        width: 135px;
+    }
+}
+
+@media screen and (max-width: 1322px) {
+
+    label,
+    h3,
+    h4,
+    span,
+    p {
+        font-size: var(--size-md-2);
+    }
+
+    .Secondly__group,
+    .Info__secondly,
+    .Confidence__secondly {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5px;
+        border: none;
+    }
+
+    .Form__container {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 785px) {
+
+    .Secondly__group,
+    .Info__secondly,
+    .Confidence__secondly {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Login__button a {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Before__Action {
+        display: none !important;
+    }
+
+    .Before__Save {
+        width: 330px !important;
+    }
+}
+
+@media screen and (max-width: 471px) {
+    .Identity__header {
+        margin-bottom: 40px;
+    }
+
+    .Name__group h3 {
+        text-align: center;
+        text-decoration: overline;
+    }
+
+    .First__group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Login__button {
+        flex-direction: column;
+    }
+}

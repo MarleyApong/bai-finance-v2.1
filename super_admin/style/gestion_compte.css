@@ -1,0 +1,79 @@
+/* ============================Lien active==================== */
+li:nth-child(4) .Items {
+    background: var(--color-1) !important;
+    color: var(--color-5);
+    border: 1px solid var(--color-4);
+}
+
+/* ============================Lien active==================== */
+li:not(:nth-child(4)) .Items:hover {
+    background: rgba(67, 56, 128, 0.13);
+}
+
+/* ==============================Partie Principale===================== */
+.Content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.Content .Box {
+    align-items: center;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+.Content .Box:hover {
+    Box-shadow: 3px 3px 10px var(--color-4);
+}
+
+.Box__description p {
+    position: relative !important;
+    padding: 5px;
+}
+
+
+
+/* ======================Responsive Accueil======================== */
+
+@media screen and (max-width: 1019px) {
+    .Content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .Navigation.active {
+        width: 230px;
+        z-index: 200;
+    }
+
+    .Main {
+        width: calc(100% - 80px);
+        left: 80px;
+        z-index: 100;
+    }
+
+    .Close {
+        display: block;
+    }
+
+    .Content .Box {
+        grid-column: span 1 !important;
+        grid-row: span 2 !important;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .Content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .Content .Box {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,114 @@
+.Form__header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  padding: 5px 0;
+  margin: 0 20px;
+  background: var(--bg-primary);
+  border-radius: 3px;
+}
+
+.Identity__header {
+  margin-bottom: 20px;
+}
+
+/* .Add__scrollY {
+  overflow: hidden !important;
+} */
+
+.Form__header .Path {
+  position: absolute;
+  left: 10px;
+  color: var(--color-5);
+  cursor: pointer;
+}
+
+.Form__header .Title {
+  position: relative;
+  display: flex;
+  font-size: var(--size-md-2);
+}
+
+.Form__header .Title h3 {
+  color: var(--color-5);
+}
+
+.Form__container {
+  display: flex;
+  width: 100%;
+  height: 87vh;
+  margin-top: 1rem;
+}
+
+.Form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* background: var(--bg-primary); */
+  padding-top: 10px !important;
+  border-radius: 3px;
+}
+
+.Form__header {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  padding: 5px 0;
+  margin: 0 10px;
+  background: var(--color-3);
+  border-radius: 3px;
+}
+
+.Form__header .Title {
+  position: relative;
+  display: flex;
+  font-size: var(--size-md-2);
+}
+
+.Login__button {
+  position: relative;
+  display: flex;
+  gap: var(--size-md);
+}
+
+.Login__button a,
+.Login__button button {
+  border: 2px solid var(--color-4);
+  color: var(--color-4);
+  background: transparent;
+  padding: 10px 50px;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: var(--f-weight-sm);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.Login__button a:hover,
+.Login__button button:hover {
+  background: var(--color-4);
+  color: var(--color-5);
+}
+
+form::-webkit-scrollbar {
+  width: 7px;
+  /* width of the entire scrollbar */
+}
+
+form::-webkit-scrollbar-track {
+  background: var(--color-4);
+  /* color of the tracking area */
+}
+
+form::-webkit-scrollbar-thumb {
+  background-color: var(--bg-primary);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid var(--bg-primary);
+  /* creates padding around scroll thumb */
+}

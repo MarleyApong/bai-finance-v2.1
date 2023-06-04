@@ -1,0 +1,316 @@
+/* ============================Lien active==================== */
+li:nth-child(3) .Items {
+    background: var(--color-1) !important;
+    color: var(--color-5);
+    border: 1px solid var(--color-4);
+}
+
+/* ============================Lien active==================== */
+li:not(:nth-child(3)) .Items:hover {
+    background: rgba(67, 56, 128, 0.13);
+}
+
+/* ==============================Partie Principale===================== */
+.Form__container {
+    height: calc(100vh - 10rem);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    padding: 10px;
+}
+
+.Add__scrollY {
+    overflow-y: scroll;
+}
+
+.Info_cpte {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.Info_cpte .General {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    border-right: 1px solid var(--color-input);
+} 
+
+.Info_cpte .Detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Title {
+    color: var(--color-4);
+}
+.Name_cpte,.Gain_cpte {
+    border: 1px solid var(--color-input);
+    padding: 8px;
+    border-radius: 3px;
+}
+
+.Info_cpte .Details_cpte {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+.Details_cpte .Logo_cpte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--color-input);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.Details_cpte {
+    display: flex;
+}
+
+.Details_cpte .Logo_cpte i {
+    font-size: 90px;
+}
+
+.Date_cpte,
+.Logo_cpte i,
+.Details_cpte,
+.Name_cpte {
+    color: var(--color-4);
+    /* font-weight: var(--f-weight-sm); */
+     /* border: 2px solid var(--color-4); */
+}
+
+.Important .Red {
+    color: red;
+}
+
+.Name__group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.Name__group h3 {
+    font-size: var(--size-md);
+    color: var(--color-4);
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+.RecentOrders {
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 1px;
+    border-radius: 3px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.RecentOrders table tr {
+    border-bottom: 1px solid rgba(27, 27, 27, 0.1);
+}
+
+table thead tr {
+    color: var(--color-5);
+    background: var(--color-1);
+}
+
+table tbody tr {
+    color: var(--color-4);
+    background: var(--bg-primary);
+}
+
+table thead td {
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.RecentOrders table tbody tr td {
+    font-weight: normal;
+    font-size: 14px;
+    color: var(--color-4) !important;
+}
+
+.RecentOrders table tbody tr:hover {
+    background-color: var(--color-hover) !important;
+    text-align: center;
+    align-items: center;
+    color: var(--color-5);
+}
+
+.RecentOrders table tr td {
+    padding: 8px 10px;
+    font-size: var(--size-md-2);
+    font-weight: var(--f-weight-sm);
+}
+
+.RecentOrders table tr td:last-child {
+    text-align: center;
+}
+
+.RecentOrders table tr td:nth-child(2) {
+    text-align: center;
+}
+
+.RecentOrders table tr td:nth-child(3) {
+    text-align: center;
+}
+
+.Before__Save {
+    margin: 30px 0;
+}
+
+/* ====================Fin du Formulaire==================== */
+
+/* ==========================Responsive====================== */
+
+@media screen and (max-width: 1322px) {
+
+    label,
+    h3,
+    h4,
+    span,
+    p {
+        font-size: var(--size-md-2);
+    }
+
+    .Form__container {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Main {
+        width: calc(100% - 0px) !important;
+        left: 0px !important;
+    }
+
+    .Navigation.show {
+        width: 230px !important;
+        z-index: 200;
+    }
+
+    .close {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .Info_cpte {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    
+    .Info_cpte .General {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        border: none;
+    } 
+}
+
+@media screen and (max-width: 785px) {
+    .All_info_Even {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .RecentOrders {
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Login__button a {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Before__Action {
+        display: none !important;
+    }
+
+    .Before__Save {
+        width: 330px !important;
+    }
+}
+
+@media screen and (max-width: 471px) {
+    .Name__group h3 {
+        text-align: center;
+        text-decoration: overline;
+    }
+
+    .Login__button {
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* ======================Responsive Accueil======================== */
+
+@media screen and (max-width: 1019px) {
+    .Content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 776px) {
+    .Navigation.active {
+        width: 230px;
+        z-index: 200;
+    }
+
+    .Main {
+        width: calc(100% - 80px);
+        left: 80px;
+        z-index: 100;
+    }
+
+    .Close {
+        display: block;
+    }
+
+    .Content .Box {
+        grid-column: span 1 !important;
+        grid-row: span 2 !important;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .Content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .Content .Box {
+        flex-direction: column;
+    }
+}
